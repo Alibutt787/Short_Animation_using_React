@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Typing from 'react-typing-animation'
+import { Useref } from './Useref';
+import { WebAnimation1 } from './WebAnimation1';
+import { WebAnimation2 } from './WebAnimation2';
 
 function App() {
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <WebAnimation2 />
+      <Useref />
+    <h4>Typing Effect using React-typing-animation</h4>
+ <Typing speed={10} >
+  <span>This span will get typed.</span>
+  </Typing>
+  <WebAnimation1/>
+
+ </>
   );
 }
 
